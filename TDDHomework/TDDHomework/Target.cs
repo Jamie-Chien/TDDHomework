@@ -17,7 +17,11 @@ namespace TDDHomework
 
         public IEnumerable<int> SubTotal(int groupSize, string columnName)
         {
-            IEnumerable<int> result = new List<int>();
+            var result = products
+                            .Select((product, index) => new { product, index })
+                            .GroupBy(g => g.index / groupSize, x => x.product)
+                            .Select(x => x.Sum(y => (int)y.GetType().GetProperty(columnName).GetValue(y)))
+                            .ToArray();
             return result;
         }
     }
