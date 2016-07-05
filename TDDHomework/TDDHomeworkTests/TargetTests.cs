@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ExpectedObjects;
 
 namespace TDDHomework.Tests
 {
@@ -41,10 +42,10 @@ namespace TDDHomework.Tests
             var expected = new int[] { 6, 15, 24, 21 };
 
             //act
-            var acutal = target.SubTotal(groupSize, columnName);
+            var actual = target.SubTotal(groupSize, columnName);
 
             //assert
-            Assert.Fail();
+            expected.ToExpectedObject().ShouldEqual(actual);
         }
 
         [TestMethod]
@@ -57,10 +58,10 @@ namespace TDDHomework.Tests
             var expected = new int[] { 6, 15, 24, 21 };
 
             //act
-            var acutal = target.SubTotal(groupSize, columnName);
+            var actual = target.SubTotal(groupSize, columnName);
 
             //asert
-            Assert.Fail();
+            expected.ToExpectedObject().ShouldEqual(actual);
         }
     }
 }
