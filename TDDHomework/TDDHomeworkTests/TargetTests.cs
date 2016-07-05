@@ -32,8 +32,24 @@ namespace TDDHomework.Tests
         }
 
         [TestMethod()]
-        public void SubTotalTest()
+        public void Test每3筆一組_取Cost總合()
         {
+            //arrange
+
+            //act
+
+            //assert
+            Assert.Fail();
+        }
+
+        [TestMethod]
+        public void Test每4筆一組_取Revenue總合()
+        {
+            //arrange
+
+            //act
+
+            //asert
             Assert.Fail();
         }
     }
