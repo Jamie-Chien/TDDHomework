@@ -35,8 +35,13 @@ namespace TDDHomework.Tests
         public void Test每3筆一組_取Cost總合()
         {
             //arrange
+            Target target = new Target(Products);
+            string columnName = "Cost";
+            int groupSize = 3;
+            var expected = new int[] { 6, 15, 24, 21 };
 
             //act
+            var acutal = target.SubTotal(groupSize, columnName);
 
             //assert
             Assert.Fail();
@@ -46,8 +51,13 @@ namespace TDDHomework.Tests
         public void Test每4筆一組_取Revenue總合()
         {
             //arrange
+            Target target = new Target(Products);
+            string columnName = "Revenue";
+            int groupSize = 3;
+            var expected = new int[] { 6, 15, 24, 21 };
 
             //act
+            var acutal = target.SubTotal(groupSize, columnName);
 
             //asert
             Assert.Fail();
