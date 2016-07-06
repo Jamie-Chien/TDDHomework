@@ -12,7 +12,7 @@ namespace TDDHomework.Tests
     [TestClass()]
     public class TargetTests
     {
-        internal List<Product> Products { get; private set; }
+        private List<Product> Products { get; set; }
 
         // 在執行每一項測試之前，先使用 TestInitialize 執行程式碼
         [TestInitialize()]
