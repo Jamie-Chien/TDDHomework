@@ -10,7 +10,7 @@ using ExpectedObjects;
 namespace TDDHomework.Tests
 {
     [TestClass()]
-    public class TargetTests
+    public class GrouperTests
     {
         private List<Product> Products { get; set; }
 
