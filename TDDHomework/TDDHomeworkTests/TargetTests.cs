@@ -36,7 +36,7 @@ namespace TDDHomework.Tests
         public void Test每3筆一組_取Cost總合()
         {
             //arrange
-            Target target = new Target(Products);
+            Grouper target = new Grouper(Products);
             string columnName = "Cost";
             int groupSize = 3;
             var expected = new int[] { 6, 15, 24, 21 };
@@ -52,7 +52,7 @@ namespace TDDHomework.Tests
         public void Test每4筆一組_取Revenue總合()
         {
             //arrange
-            Target target = new Target(Products);
+            Grouper target = new Grouper(Products);
             string columnName = "Revenue";
             int groupSize = 4;
             var expected = new int[] { 50, 66, 60 };

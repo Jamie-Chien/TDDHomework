@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace TDDHomework
 {
-    internal class Target
+    internal class Grouper
     {
         private IList<Product> products;
 
-        internal Target(IList<Product> products)
+        internal Grouper(IList<Product> products)
         {
             this.products = products;
         }
