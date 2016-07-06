@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TDDHomework
 {
-    public class Target
+    internal class Target
     {
         private IList<Product> products;
 
