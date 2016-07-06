@@ -54,8 +54,8 @@ namespace TDDHomework.Tests
             //arrange
             Target target = new Target(Products);
             string columnName = "Revenue";
-            int groupSize = 3;
-            var expected = new int[] { 6, 15, 24, 21 };
+            int groupSize = 4;
+            var expected = new int[] { 50, 66, 60 };
 
             //act
             var actual = target.SubTotal(groupSize, columnName);
